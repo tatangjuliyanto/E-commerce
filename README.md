@@ -1,4 +1,5 @@
-# winky_shop
+# E-Commerce
+
 ## Getting Started
 
 ## Implement Flutter Clean Architecture + BLoC (E-Commerce)
