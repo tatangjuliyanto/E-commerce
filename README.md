@@ -1,10 +1,7 @@
 # winky_shop
-
-A new Flutter project.
-
 ## Getting Started
 
-## Flutter Clean Architecture + BLoC (E-Commerce)
+## Implement Flutter Clean Architecture + BLoC (E-Commerce)
 
 This project is a starting point for a Flutter application.
 
