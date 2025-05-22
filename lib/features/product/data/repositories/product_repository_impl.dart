@@ -3,12 +3,12 @@ import 'package:winky_shop/features/product/data/resources/product_remote_dataso
 import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
-  final ProductRemoteDataSource RemoteDataSource;
+  final ProductRemoteDataSource remoteDataSource;
 
-  ProductRepositoryImpl(this.RemoteDataSource);
+  ProductRepositoryImpl(this.remoteDataSource);
 
   @override
   Future<List<Product>> getProducts() async {
-    return await RemoteDataSource.fetchProducts();
+    return await remoteDataSource.fetchProducts();
   }
 }

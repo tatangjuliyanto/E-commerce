@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:http/http.dart' as http;
 import 'package:winky_shop/features/product/data/repositories/product_repository.dart';
 import 'package:winky_shop/features/product/data/repositories/product_repository_impl.dart';
 import 'package:winky_shop/features/product/data/resources/product_remote_datasource.dart';
@@ -23,4 +24,7 @@ void init() {
   sl.registerLazySingleton<ProductRemoteDataSource>(
     () => ProductRemoteDataSourceImpl(sl()),
   );
+
+  //client
+  sl.registerLazySingleton(() => http.Client());
 }

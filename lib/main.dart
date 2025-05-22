@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'injection_container.dart' as di;
+import 'features/product/presentation/pages/product_page.dart';
+import 'features/product/presentation/bloc/product_bloc.dart';
 
-void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(); // if using firebase terms
+void main() {
+  di.init();
   runApp(const MyApp());
 }
 
@@ -12,22 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Winky Shop',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Winky Shop')),
-      body: Center(child: const Text('Welcome to Winky Shop!')),
+      title: 'E-commerce App',
+      home: BlocProvider(
+        create: (_) => di.sl<ProductBloc>()..add(FetchProducts()),
+        child: const ProductPage(),
+      ),
     );
   }
 }
