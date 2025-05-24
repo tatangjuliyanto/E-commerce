@@ -1,13 +1,31 @@
-class Product {
-  final String id;
-  final String name;
-  final double price;
-  final String imageUrl;
+// class Product {
+//   final String id;
+//   final String name;
+//   final double price;
+//   final String imageUrl;
 
-  Product({
-    required this.id,
-    required this.name,
-    required this.price,
-    required this.imageUrl,
-  });
-}
+//   Product({
+//     required this.id,
+//     required this.name,
+//     required this.price,
+//     required this.imageUrl,
+//   });
+// }
+
+// class ProductModel extends Product {
+//   ProductModel({
+//     required super.id,
+//     required super.name,
+//     required super.price,
+//     required super.imageUrl,
+//   });
+
+//   factory ProductModel.fromJson(Map<String, dynamic> json) {
+//     return ProductModel(
+//       id: json['id'].toString(),
+//       name: json['title'],
+//       price: (json['price'] as num).toDouble(),
+//       imageUrl: json['image'],
+//     );
+//   }
+// }

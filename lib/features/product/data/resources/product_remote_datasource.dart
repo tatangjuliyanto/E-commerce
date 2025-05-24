@@ -1,7 +1,7 @@
 import 'dart:convert';
-
 import 'package:winky_shop/features/product/data/models/product_model.dart';
 import 'package:http/http.dart' as http;
+// import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
 
 abstract class ProductRemoteDataSource {
   Future<List<ProductModel>> fetchProducts();

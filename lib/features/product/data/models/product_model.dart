@@ -1,16 +1,30 @@
-import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
+// import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
+
+class Product {
+  final String id;
+  final String title;
+  final double price;
+  final String imageUrl;
+
+  Product({
+    required this.id,
+    required this.title,
+    required this.price,
+    required this.imageUrl,
+  });
+}
 
 class ProductModel extends Product {
   ProductModel({
     required super.id,
-    required super.name,
+    required super.title,
     required super.price,
     required super.imageUrl,
   });
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
       id: json['id'].toString(),
-      name: json['title'],
+      title: json['title'],
       price: (json['price'] as num).toDouble(),
       imageUrl: json['image'],
     );

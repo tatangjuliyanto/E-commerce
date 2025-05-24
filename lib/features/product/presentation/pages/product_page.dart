@@ -20,7 +20,7 @@ class ProductPage extends StatelessWidget {
                 final product = state.products[index];
                 return ListTile(
                   leading: Image.network(product.imageUrl),
-                  title: Text(product.name),
+                  title: Text(product.title),
                   subtitle: Text('\$${product.price.toString()}'),
                 );
               },
