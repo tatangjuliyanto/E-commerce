@@ -1,8 +1,7 @@
 //event
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:winky_shop/features/product/data/models/product_model.dart';
 import 'package:winky_shop/features/product/domain/usecases/get_products_usecase.dart';
-// import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
+import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
 
 abstract class ProductEvent {}
 

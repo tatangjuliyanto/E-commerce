@@ -1,18 +1,4 @@
-// import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
-
-class Product {
-  final String id;
-  final String title;
-  final double price;
-  final String imageUrl;
-
-  Product({
-    required this.id,
-    required this.title,
-    required this.price,
-    required this.imageUrl,
-  });
-}
+import 'package:winky_shop/features/product/domain/entities/product_entity.dart';
 
 class ProductModel extends Product {
   ProductModel({
