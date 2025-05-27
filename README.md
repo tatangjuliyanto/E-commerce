@@ -1,5 +1,7 @@
 # E-Commerce
 
+# this is using API from https://fakestoreapi.com/products
+
 ## Getting Started
 
 ## Implement Flutter Clean Architecture + BLoC (E-Commerce)
